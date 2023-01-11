@@ -18,7 +18,6 @@ class MainWindow(QMainWindow):
         self.label.setGeometry(100, 100,
                                self.pixmap.width(),
                                self.pixmap.height())
-        self.resize(self.pixmap.width() * 4, self.pixmap.height() * 4)
         self.resize(500, 500)
 
     def keyPressEvent(self, event):
