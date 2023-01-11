@@ -28,9 +28,9 @@ class MainWindow(QMainWindow):
             self.label.setPixmap(self.pixmap)
 
     def mouseMoveEvent(self, event):
-        if event.x() + self.pixmap.width() + 5 < 500 and \
-                event.y() + self.pixmap.height() + 5 < 500:
-            self.label.move(event.x(), event.y())
+        if event.x() + self.pixmap.width() + 20 < 500 and \
+                event.y() + self.pixmap.height() + 20 < 500:
+            self.label.move(event.x() + 10, event.y() + 10)
 
 
 def exception_hook(exctype, value, traceback):
